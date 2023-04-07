@@ -41,4 +41,7 @@ jobs:
         run: |
           git config --global user.email "corotata@gmail.com"
           git config --global user.name "corotata"
-         
+          git checkout gh-pages
+          git add .
+          git commit -m "Update result"
+          git push origin gh-pages
