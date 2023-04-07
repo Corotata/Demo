@@ -30,13 +30,13 @@ jobs:
         run: |
           mkdir -p assets/proxies
           cp result.yaml assets/proxies
-        working-directory: ./docs/assets/proxies
+        working-directory: ./docs
 
       - name: Debug
         run: |
           echo "Current working directory: $(pwd)"
           echo "Files in current directory: $(ls -al)"
-          working-directory: ./docs/assets/proxies
+          working-directory: ./docs
 
       - name: Commit result
         run: |
