@@ -36,7 +36,7 @@ jobs:
         run: |
           echo "Current working directory: $(pwd)"
           echo "Files in current directory: $(ls -al)"
-          working-directory: ./docs
+        working-directory: ./docs/assets/proxies
 
       - name: Commit result
         run: |
