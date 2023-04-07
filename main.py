@@ -3,6 +3,13 @@ import os
 import importlib
 import subprocess
 
+import time
+
+print('开始运行脚本...')
+time.sleep(10)
+print('脚本运行结束。')
+
+
 # 检查依赖库是否已安装，如果未安装则尝试自动安装
 def check_and_install(package):
     try:
